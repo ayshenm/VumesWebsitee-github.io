@@ -1,0 +1,151 @@
+<div class="tabs container flex justify-center items-center gap-5 font-primary">
+    <button class="tablink py-20 px-40 rounded-3xl font-bold text-2xl active bg-white"
+        onclick="openTab(event, 'tab1')">Qida məhsulları</button>
+    <button class="tablink py-20 px-40 rounded-3xl font-bold text-2xl bg-white"
+        onclick="openTab(event, 'tab2')">Qeyri-qida məhsulları</button>
+</div>
+
+<div id="clear"class="bg-red-400 min-h-[500px] flex justify-between  container pt-5 mt-30">
+    <div id="tab1" class="tabcontent flex bg-lime-800 w-full justify-around gap-56">
+        <div class="tab1 font-primary items-start inline-flex flex-col justify-around gap-[64px]">
+            <button class="tablinks   font-bold text-2xl active1"
+            onclick="openCard(event, 'first')" >Yağlar</button>
+            <button class="tablinks font-bold text-2xl"
+                onclick="openCard(event, 'second')">Şirniyyatlar</button>
+            <button class="tablinks font-bold text-2xl"
+                onclick="openCard(event, 'thrid')">Paxlalılar</button>
+            <button class="tablinks font-bold text-2xl" onclick="openCard(event, 'fourth')">Qəhvə</button>
+            <button class="tablinks font-bold text-2xl text-left"
+                onclick="openCard(event, 'fifty')">Makaron <br />məhsulları</button>
+        </div>
+
+        <div id="first" class="tabcontent flex flex-row justify-between bg-orange-900 " style="display: none;">
+            <div class="item1 w-[354px]   flex flex-col gap-4 bg-white rounded-3xl ">
+                <div class="bg-white w-[354px] min-h-[266px] rounded-3xl ">
+                    <img class="" src="./assets/images/yag.png" alt="Image 1">
+                </div>
+
+                <div
+                    class="overlay flex justify-start flex-col items-start  p-4 h-[191px] bg-lPurple rounded-3xl font-primary ">
+
+
+                    <span class="text-mainGrey font-bold text-xl">Qida məhsulları</span>
+                    <h2 class="font-bold text-[28px] leading-[36px] mt-[12px] mb-[10px]  text-main">
+                        Günəbaxan yağı
+                    </h2>
+                    <div class="flex flex-col gap-3 text-mainGrey font-bold text-xl">
+                        <span>Məhsul kodu: 00001</span>
+                        <span>3 x 5.0L</span>
+                    </div>
+                    <a href="./mehsul.html" style="padding: 15px 30px 15px 30px"
+                        class=" invisible rounded-[14px] bg-white font-bold text-main hover:bg-mainW hover:text-main transition-all duration-300 ease-in-out delay-75">Daha
+                        ətraflı</a>
+                </div>
+            </div>
+        </div>
+        <div id="second" class="tabcontent" style="display: none;">
+            <h3>sirniyyat</h3>
+            
+        </div>
+        <div id="thrid" class="tabcontent" style="display: none;">
+            <h3>paxlalilar</h3>
+            
+        </div>
+        <div id="fourth" class="tabcontent" style="display: none;">
+            <h3>qehve</h3>
+          
+        </div>
+        <div id="fifty" class="tabcontent" style="display: none;">
+            <h3>makaron mehsullari</h3>
+        </div>
+    </div>
+
+    <div id="tab2" class="tabcontent" style="display: none;">
+        <div class="tab2 font-primary items-start inline-flex flex-col justify-around gap-[64px] overflow-hidden">
+            <button class="tablinks   font-bold text-2xl"
+                onclick="openCard(event, 'f')">1</button>
+            <button class="tablinks font-bold text-2xl"
+                onclick="openCard(event, 's')">2</button>
+           
+        </div>
+        <div id="f" class="tabcontent" style="display: none;">
+            <h3>sabun</h3>
+          
+        </div>
+        <div id="s" class="tabcontent" style="display: none;">
+            <h3>mercun</h3>
+          
+        </div>
+     </div>
+</div>
+</section> -->
+
+<section class="h-[700px] mt-[148px] flex flex-col gap-5">
+<div class="tabs container flex justify-center items-center gap-5 font-primary">
+    <button class="tablink py-20 px-40 rounded-3xl font-bold text-2xl active bg-white"
+        onclick="openTab(event, 'tab1')">Qida məhsulları</button>
+    <button class="tablink py-20 px-40 rounded-3xl font-bold text-2xl bg-white"
+        onclick="openTab(event, 'tab2')">Qeyri-qida məhsulları</button>
+</div>
+
+<!-- <div id="clear" class="bg-red-400 min-h-[500px] flex justify-between container pt-5 mt-30"> -->
+     <!-- <div class="tab1 font-primary items-start inline-flex flex-col justify-around gap-[64px]">
+        <button class="tablinks   font-bold text-2xl active1"
+        onclick="openCard(event, 'first')" >Yağlar</button>
+        <button class="tablinks font-bold text-2xl"
+            onclick="openCard(event, 'second')">Şirniyyatlar</button>
+        <button class="tablinks font-bold text-2xl"
+            onclick="openCard(event, 'thrid')">Paxlalılar</button>
+        <button class="tablinks font-bold text-2xl" onclick="openCard(event, 'fourth')">Qəhvə</button>
+        <button class="tablinks font-bold text-2xl text-left"
+            onclick="openCard(event, 'fifty')">Makaron <br />məhsulları</button>
+    </div> -->
+    <div id="tab1" class="tabcontent flex bg-lime-800 w-full justify-around gap-56">
+    <div class="tab  font-primary items-start inline-flex flex-col justify-around gap-[64px]">
+        <button class="tablinks font-bold text-2xl active1" onclick="openCard(event, 'first')">Yağlar</button>
+        <button class="tablinks font-bold text-2xl" onclick="openCard(event, 'second')">Şirniyyatlar</button>
+        <button class="tablinks font-bold text-2xl" onclick="openCard(event, 'thrid')">Paxlalılar</button>
+        <button class="tablinks font-bold text-2xl" onclick="openCard(event, 'fourth')">Qəhvə</button>
+        <button class="tablinks font-bold text-2xl text-left" onclick="openCard(event, 'fifty')">Makaron <br/> Məhsulları</button>
+    </div>
+
+    <div id="first" class="tabcontent">
+        <h3>Yağlar</h3>
+        <p>Yağlar sekmesi burada olacak.</p>
+    </div>
+
+    <div id="second" class="tabcontent">
+        <h3>Şirniyyatlar</h3>
+        <p>Şirniyyatlar sekmesi burada olacak.</p>
+    </div>
+
+    <div id="thrid" class="tabcontent">
+        <h3>Paxlalılar</h3>
+        <p>Paxlalılar sekmesi burada olacak.</p>
+    </div>
+
+    <div id="fourth" class="tabcontent">
+        <h3>Qəhvə</h3>
+        <p>Qəhvə sekmesi burada olacak.</p>
+    </div>
+
+    <div id="fifty" class="tabcontent">
+        <h3>Makaron Məhsulları</h3>
+        <p>Makaron Məhsulları sekmesi burada olacak.</p>
+    </div>
+</div>
+
+
+<div id="tab2" class="tabcontent" style="display: none;">
+    <div
+        class="tab2 font-primary items-start inline-flex flex-col justify-around gap-[64px] overflow-hidden">
+        <button class="tablinks   font-bold text-2xl" onclick="openCard(event, 'f')">1</button>
+        <button class="tablinks font-bold text-2xl" onclick="openCard(event, 's')">2</button>
+    </div>
+    <div id="f" class="tabcontent" style="display: none;">
+        <h3>sabun</h3>
+    </div>
+    <div id="s" class="tabcontent" style="display: none;">
+        <h3>mercun</h3>
+    </div>
+</div>

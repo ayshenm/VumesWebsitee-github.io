@@ -1,0 +1,19 @@
+{
+  "name": "vumes",
+  "version": "1.0.0",
+  "description": "vumes frontend",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./input.css -o ./css/main.css",
+    "watch": "tailwindcss -i ./input.css -o ./css/main.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "json": "^11.0.0"
+  }
+}

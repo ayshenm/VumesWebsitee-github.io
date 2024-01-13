@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vumes</title>
+    <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500&display=swap"
+        rel="stylesheet" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-------------------------------------------------- Header Start -------------------------------------------------------------------->
+    <div id="altMenu" class="w-[100%] h-auto overflow-hidden" style="
+    background: url('./assets/images/MENYU\ BG.png') center/cover;
+    width: 100%;
+    display: none;
+  " ;>
+        <div class="w-[1518px] h-[634px] flex items-center flex-col "
+            style="background: url(./assets/images/Frame\ 121.png)">
+            <div class="ml-[350px] flex flex-col">
+                <div class="flex gap-9 justify-end items-center w-[900px] font-primary font-[900] text-white mt-[52px]">
+                    <span>EN</span>
+                    <img src="./assets/images/Line 1.svg" />
+                    <img src="./assets/images/search.svg" />
+                    <form action="">
+                        <div class="input-field">
+                            <input class="bg-mainPurple" type="text" id="name" required />
+                        </div>
+                    </form>
+                    <img src="./assets/images/Line 1.svg" />
+                    <div class="flex gap-2">
+                        <span>BAĞLA</span>
+                        <button onclick="closeMenu()"><img src="./assets/images/x.svg" /></button>
+                        <!-- <a onclick="closeMenu()" href="#"><img src="./assets/images/x.svg" /></a> -->
+                    </div>
+                </div>
+                <div class="flex flex-col justify-start items-start">
+
+                    <div class="middle w-[891px] h-[198px] mt-20">
+                        <nav class="flex-wrap flex">
+                            <ul
+                                class="flex justify-end items-start flex-wrap gap-[63px] font-primary font-[900] text-lg">
+                                <li>
+                                    <a href="./haqqimizda.html"
+                                        class="menuhover px-[50px] py-[25px] rounded-3xl bg-twoLightP opacity-95 text-white hover:bg-white hover:text-main transition-all duration-300 ease-in-out delay-75">HAQQIMIZDA</a>
+                                </li>
+                                <li>
+                                    <a href="./fealiyyet.html"
+                                        class="menuhover px-[50px] py-[25px] rounded-3xl bg-twoLightP text-white hover:bg-white hover:text-main transition-all duration-300 ease-in-out delay-75">FƏALİYYƏTİMİZ</a>
+                                </li>
+                                <li>
+                                    <a href="./partniyor.html"
+                                        class="menuhover px-[50px] py-[25px] rounded-3xl bg-twoLightP text-white hover:bg-white hover:text-main transition-all duration-300 ease-in-out delay-75">PARTNYORLAR</a>
+                                </li>
+                                <li>
+                                    <a href="./mehsullar.html"
+                                        class="menuhover px-[50px] py-[25px] rounded-3xl bg-twoLightP text-white hover:bg-white hover:text-main transition-all duration-300 ease-in-out delay-75">MƏHSULLAR</a>
+                                </li>
+                                <li>
+                                    <a href="./media.html"
+                                        class="menuhover px-[50px] py-[25px] rounded-3xl bg-twoLightP text-white hover:bg-white hover:text-main transition-all duration-300 ease-in-out delay-75">MEDİA</a>
+                                </li>
+                                <li>
+                                    <a href="./kariyera.html"
+                                        class="menuhover px-[50px] py-[25px] rounded-3xl bg-twoLightP text-white hover:bg-white hover:text-main transition-all duration-300 ease-in-out delay-75">KARYERA</a>
+                                </li>
+                                <li>
+                                    <a href="./contact.html"
+                                        class="menuhover px-[50px] py-[25px] rounded-3xl bg-twoLightP text-white hover:bg-white hover:text-main transition-all duration-300 ease-in-out delay-75">BİZİMLƏ
+                                        ƏLAQƏ</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+
+                <div class="flex gap-9 justify-around items-center font-primary font-[900] text-white mt-[52px] ">
+                    <div class="flex gap-[31.04px]  mr-7">
+                        <a href="#"><img class="w-[35.47px] h-[35.47px] " src="./assets/images/linkedin.svg"
+                                alt="link" /></a>
+                        <a href="#"><img class="w-[35.47px] h-[35.47px]" src="./assets/images/facebook.svg"
+                                alt="link" /></a>
+                        <a href="#"><img class="w-[35.47px] h-[35.47px]" src="./assets/images/instagram.svg"
+                                alt="link" /></a>
+                        <a href="#"><img class="w-[35.47px] h-[35.47px]" src="./assets/images/twitter.svg"
+                                alt="link" /></a>
+
+                    </div>
+                    <div class="flex ">
+                        <img src="./assets/images/Line 1.svg" />
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <img src="./assets/images/mail.svg" />
+                        <a class="font-primary font-medium text-lg" href="#">office@vumes.az</a>
+                    </div>
+
+                    <img src="./assets/images/Line 1.svg" />
+                    <div class="flex gap-3 items-center">
+                        <img src="./assets/images/phone.svg" />
+                        <span class="text-lg font-medium">+994 50 207 2705</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="hide">
+        <header class="w-[100%] h-[466px]" style="
+        background-image: url(./assets/images/s1.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+      " ;>
+            <nav class="flex justify-between items-center">
+                <img src="./assets/images/VUMES LOGO PURPLE PNG 1.png" alt="logo" class="ml-[109px]" />
+                <div style="background-image: url('./assets/images/Vector 2.svg')"
+                    class="w-[980px] h-[149px] flex justify-center items-center">
+                    <div class="ml-[120px]">
+                        <div class="flex gap-9 items-center text-white font-primary font-[900]">
+                            <a href="#"><img src="./assets/images/linkedin.svg" alt="link" /></a>
+                            <a href="#"><img src="./assets/images/facebook.svg" alt="link" /></a>
+                            <a href="#"><img src="./assets/images/instagram.svg" alt="link" /></a>
+                            <a href="#"><img src="./assets/images/twitter.svg" alt="link" /></a>
+
+                            <img src="./assets/images/Line 1.svg" />
+                            <span>EN</span>
+                            <img src="./assets/images/search.svg" />
+                            <img src="./assets/images/Line 1.svg" />
+                            <div class="flex gap-2 font-primary font[900] text-lg justify-center items-center">
+                                <span>MENYU</span>
+                                <a onclick="openMenu()" href="#"><img src="./assets/images/Frame 41.png" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class=" mt-[87px]">
+                <div class="font-primary gap-[36px] container">
+                    <div class="inline-flex font-primary px-[20px] py-[10px] text-lPurple "
+                        style="border: 2px solid #fff">
+                        <img src="./assets/images/corner-up-left.svg" />
+                        <a href="./index.html" class="p-3 font-primaryBold">Ana səhifə</a>
+                    </div>
+                    <h2 class="animeslide-heading mt-4 font-bold text-7xl leading-[84px] text-lPurple">
+                        Karyera
+                    </h2>
+                </div>
+            </div>
+        </header>
+        <!-------------------------------------------------- Header End ---------------------------------------------------------------------->
+
+        <!--------------------------------------------------  MAIN  Start ---------------------------------------------------------------------->
+        <main class="">
+            <!-------------------------------------------------- Fealiyyet Section Start ---------------------------------------------------------------------->
+            <section class="bg-lPurple pt-[125px]">
+                <div
+                    class="container flex  items-center justify-between overflow-hidden rounded-[60px] shadow-4  mb-[370px] h-[350px] relative">
+                    <div class=" flex justify-between">
+                        <div class="font-primary text-mainPurple w-full mt-[103px] ml-[106px]">
+                            <span class="p-3 font-primaryBold text-main" style="border: 2px solid #282151">VUMES</span>
+                            <h2 class="font-semibold text-5xl leading-[59px] mt-7">İş Mühiti və<br /> üstünlüklərimiz
+                            </h2>
+                        </div>
+                        <div class="w-[653px] h-[350px] rounded-[60px] absolute  left-[627px] top-0">
+                            <img class=" w-full h-full" src="./assets/images/sek1.png" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container flex flex-col items-center  pt-[50px]">
+                    <div class="accordion_container font-primary flex flex-col gap-5">
+                        <div>
+                            <div
+                                class="accordion_head w-full py-[20px] px-[40px] rounded-3xl  text-2xl bg-mainW text-main">
+                                Yüksək komanda
+                                ruhu<span class="plusminus">+</span>
+                            </div>
+                            <div class="w-full accordion_body rounded-3xl text-2xl bg-mainW text-main mt-3"
+                                style="display: none;">
+                                <p class="text-right">Bizim üçün yaradıcı və yenilikçi olmaq uğurun açarıdır.
+                                    Fərqlilikləri
+                                    üstünlük olaraq görür,
+                                    bütün əməkdaşlarımıza inkişaf üçün şərait yaradır, ayrı-seçkiliyə yol vermirik.
+                                    Biznes
+                                    etikamızı qoruyaraq, operativlik və effektivliyimizi davamlı artıraraq inkişaf
+                                    edirik.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                class="accordion_head w-full py-[20px] px-[40px] rounded-3xl  text-2xl bg-mainW text-main">
+                                Öyrənməyə və öyrətməyə əlverişli mühit<span class="plusminus">+</span>
+                            </div>
+                            <div class="w-full accordion_body rounded-3xl text-2xl bg-mainW text-main mt-3"
+                                style="display: none;">
+                                <p class="text-right">Bizim üçün yaradıcı və yenilikçi olmaq uğurun açarıdır.
+                                    Fərqlilikləri
+                                    üstünlük olaraq görür,
+                                    bütün əməkdaşlarımıza inkişaf üçün şərait yaradır, ayrı-seçkiliyə yol vermirik.
+                                    Biznes
+                                    etikamızı qoruyaraq, operativlik və effektivliyimizi davamlı artıraraq inkişaf
+                                    edirik.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                class="accordion_head w-full py-[20px] px-[40px] rounded-3xl  text-2xl bg-mainW text-main">
+                                Beynəlxalq təcrübəyə malik peşəkarlarla çalışma imkanı<span class="plusminus">+</span>
+                            </div>
+                            <div class="w-full accordion_body rounded-3xl text-2xl bg-mainW text-main mt-3"
+                                style="display: none;">
+                                <p class="text-right">Bizim üçün yaradıcı və yenilikçi olmaq uğurun açarıdır.
+                                    Fərqlilikləri
+                                    üstünlük olaraq görür,
+                                    bütün əməkdaşlarımıza inkişaf üçün şərait yaradır, ayrı-seçkiliyə yol vermirik.
+                                    Biznes
+                                    etikamızı qoruyaraq, operativlik və effektivliyimizi davamlı artıraraq inkişaf
+                                    edirik.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                class="accordion_head w-full py-[20px] px-[40px] rounded-3xl  text-2xl bg-mainW text-main">
+                                Karyera yüksəlişi<span class="plusminus">+</span>
+                            </div>
+                            <div class="w-full accordion_body rounded-3xl text-2xl bg-mainW text-main mt-3"
+                                style="display: none;">
+                                <p class="text-right">Bizim üçün yaradıcı və yenilikçi olmaq uğurun açarıdır.
+                                    Fərqlilikləri
+                                    üstünlük olaraq görür,
+                                    bütün əməkdaşlarımıza inkişaf üçün şərait yaradır, ayrı-seçkiliyə yol vermirik.
+                                    Biznes
+                                    etikamızı qoruyaraq, operativlik və effektivliyimizi davamlı artıraraq inkişaf
+                                    edirik.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                class="accordion_head w-full py-[20px] px-[40px] rounded-3xl  text-2xl bg-mainW text-main">
+                                İş və həyat balansı<span class="plusminus">+</span>
+                            </div>
+                            <div class="w-full accordion_body rounded-3xl text-2xl bg-mainW text-main mt-3"
+                                style="display: none;">
+                                <p class="text-right">Bizim üçün yaradıcı və yenilikçi olmaq uğurun açarıdır.
+                                    Fərqlilikləri
+                                    üstünlük olaraq görür,
+                                    bütün əməkdaşlarımıza inkişaf üçün şərait yaradır, ayrı-seçkiliyə yol vermirik.
+                                    Biznes
+                                    etikamızı qoruyaraq, operativlik və effektivliyimizi davamlı artıraraq inkişaf
+                                    edirik.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--------------------------------------------------  Section End ---------------------------------------------------------------------->
+            <section class="bg-lPurple justify-center items-center flex  flex-col">
+                <!-------------------------------------------------- Xeberler Section Start ---------------------------------------------------------------------->
+                <div class="container flex items-center justify-center">
+                    <div
+                        class="font-primary text-mainPurple mt-[148px] flex justify-center items-center flex-col mb-20 ">
+                        <span class="p-3 font-primaryBold text-main" style="border: 2px solid #282151">MEDİA</span>
+                        <h2 class="font-semibold text-5xl leading-[59px] mt-7">Xəbərlər & Press-reliz</h2>
+                    </div>
+                </div>
+                <div class="slide-container swiper max-w-[1120px] w-full  0px mt-11">
+                    <div class="slide-content my-0 max-h[1500px]">
+                        <div class=" swiper-wrapper">
+                            <div class="max-w-[500px] swiper-slide imgScale  max-h-[500px]">
+                                <div class="bg-[#777777] max-w-[400px] rounded-3xl scale-img ">
+                                    <img class="" src="./assets/images/ted/2.jpg" alt="Image 1">
+                                </div>
+                                <div class="flex flex-col items-start ml-2">
+                                    <h2
+                                        class="font-bold text-[18px] leading-[19px] mt-[14px] mb-[14px] font-primary text-main">
+                                        Distributeri olduğumuz Melitta şirkəti haqqında
+                                    </h2>
+                                    <p class="text-sm  text-mainGrey mb-2">
+                                        Məktubunuz göndərildikdən sonra<br /> əməkdaşlarımız tərəfindən qeydə
+                                        alınaraq<br />
+                                        sizinlə ən qısa
+                                        zamanda əlaqə saxlanılacaqdır.
+                                    </p>
+                                    <a href="#" style="padding: 15px 30px 15px 30px"
+                                        class=" rounded-[14px] bg-main font-bold text-mainW hover:bg-mainPurple hover:text-lPurple transition-all duration-300 ease-in-out delay-75">Daha
+                                        ətraflı</a>
+                                </div>
+                            </div>
+                            <div class=" max-w-[500px] swiper-slide imgScale  max-h-[500px]">
+                                <div class="bg-[#777777] max-w-[400px] rounded-3xl scale-img ">
+                                    <img class="" src="./assets/images/ted/2.jpg" alt="Image 1">
+                                </div>
+                                <div class="flex flex-col items-start ml-2">
+                                    <h2
+                                        class="font-bold text-[18px] leading-[19px] mt-[14px] mb-[14px] font-primary text-main">
+                                        Distributeri olduğumuz Melitta şirkəti haqqında
+                                    </h2>
+                                    <p class="text-sm  text-mainGrey mb-2">
+                                        Məktubunuz göndərildikdən sonra<br /> əməkdaşlarımız tərəfindən qeydə
+                                        alınaraq<br />
+                                        sizinlə ən qısa
+                                        zamanda əlaqə saxlanılacaqdır.
+                                    </p>
+                                    <a href="#" style="padding: 15px 30px 15px 30px"
+                                        class=" rounded-[14px] bg-main font-bold text-mainW hover:bg-mainPurple hover:text-lPurple transition-all duration-300 ease-in-out delay-75">Daha
+                                        ətraflı</a>
+                                </div>
+
+                            </div>
+                            <div class="max-w-[500px] swiper-slide imgScale  max-h-[500px] ">
+                                <div class="bg-[#777777] max-w-[400px] rounded-3xl scale-img ">
+                                    <img class="" src="./assets/images/ted/2.jpg" alt="Image 1">
+                                </div>
+                                <div class="flex flex-col items-start ml-2">
+                                    <h2
+                                        class="font-bold text-[18px] leading-[19px] mt-[14px] mb-[14px] font-primary text-main">
+                                        Distributeri olduğumuz Melitta şirkəti haqqında
+                                    </h2>
+                                    <p class="text-sm  text-mainGrey mb-2">
+                                        Məktubunuz göndərildikdən sonra<br /> əməkdaşlarımız tərəfindən qeydə
+                                        alınaraq<br />
+                                        sizinlə ən qısa
+                                        zamanda əlaqə saxlanılacaqdır.
+                                    </p>
+                                    <a href="#" style="padding: 15px 30px 15px 30px"
+                                        class=" mb-3 rounded-[14px] bg-main font-bold text-mainW hover:bg-mainPurple hover:text-lPurple transition-all duration-300 ease-in-out delay-75">Daha
+                                        ətraflı</a>
+                                </div>
+                            </div>
+                            <div class="max-w-[500px] swiper-slide imgScale  max-h-[500px]">
+                                <div class="bg-[#777777] max-w-[400px] rounded-3xl scale-img ">
+                                    <img class="" src="./assets/images/ted/2.jpg" alt="Image 1">
+                                </div>
+                                <div class="flex flex-col items-start ml-2">
+                                    <h2
+                                        class="font-bold text-[18px] leading-[19px] mt-[14px] mb-[14px] font-primary text-main">
+                                        Distributeri olduğumuz Melitta şirkəti haqqında
+                                    </h2>
+                                    <p class="text-sm  text-mainGrey mb-2">
+                                        Məktubunuz göndərildikdən sonra<br /> əməkdaşlarımız tərəfindən qeydə
+                                        alınaraq<br />
+                                        sizinlə ən qısa
+                                        zamanda əlaqə saxlanılacaqdır.
+                                    </p>
+                                    <a href="#" style="padding: 15px 30px 15px 30px"
+                                        class="mb-3 rounded-[14px] bg-main font-bold text-mainW hover:bg-mainPurple hover:text-lPurple transition-all duration-300 ease-in-out delay-75">Daha
+                                        ətraflı</a>
+                                </div>
+                            </div>
+                            <div class="max-w-[500px] swiper-slide imgScale  max-h-[500px] ">
+                                <div class="bg-[#777777] max-w-[400px] rounded-3xl scale-img ">
+                                    <img class="" src="./assets/images/ted/2.jpg" alt="Image 1">
+                                </div>
+                                <div class="flex flex-col items-start ml-2">
+                                    <h2
+                                        class="font-bold text-[18px] leading-[19px] mt-[14px] mb-[14px] font-primary text-main">
+                                        Distributeri olduğumuz Melitta şirkəti haqqında
+                                    </h2>
+                                    <p class="text-sm  text-mainGrey mb-2">
+                                        Məktubunuz göndərildikdən sonra<br /> əməkdaşlarımız tərəfindən qeydə
+                                        alınaraq<br />
+                                        sizinlə ən qısa
+                                        zamanda əlaqə saxlanılacaqdır.
+                                    </p>
+                                    <a href="#" style="padding: 15px 30px 15px 30px"
+                                        class="mb-3 rounded-[14px] bg-main font-bold text-mainW hover:bg-mainPurple hover:text-lPurple transition-all duration-300 ease-in-out delay-75">Daha
+                                        ətraflı</a>
+                                </div>
+                            </div>
+                            <div class="max-w-[500px] swiper-slide imgScale  max-h-[500px] ">
+                                <div class="bg-[#777777] max-w-[400px] rounded-3xl scale-img ">
+                                    <img class="" src="./assets/images/ted/2.jpg" alt="Image 1">
+                                </div>
+                                <div class="flex flex-col items-start ml-2">
+                                    <h2
+                                        class="font-bold text-[18px] leading-[19px] mt-[14px] mb-[14px] font-primary text-main">
+                                        Distributeri olduğumuz Melitta şirkəti haqqında
+                                    </h2>
+                                    <p class="text-sm  text-mainGrey mb-2">
+                                        Məktubunuz göndərildikdən sonra<br /> əməkdaşlarımız tərəfindən qeydə
+                                        alınaraq<br />
+                                        sizinlə ən qısa
+                                        zamanda əlaqə saxlanılacaqdır.
+                                    </p>
+                                    <a href="#" style="padding: 15px 30px 15px 30px"
+                                        class="mb-3 rounded-[14px] bg-main font-bold text-mainW hover:bg-mainPurple hover:text-lPurple transition-all duration-300 ease-in-out delay-75">Daha
+                                        ətraflı</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="border: 1px solid #752F88;"
+                    class="flex justify-center items-center  px-[50px] py-[10px] rounded-[24px] mt-[72px] mb-[251px] gap-3">
+                    <button class="swiper-button-next swiper-button-next1"></button>
+                    <button class="swiper-button-prev swiper-button-prev1"></button>
+                </div>
+            </section>
+
+            <!-------------------------------------------------- Xeberler Section End ---------------------------------------------------------------------->
+
+            <section class="bg-mainPurple h-[512px] pt-[146px]">
+                <!-------------------------------------------------- Muraciet Section Start ---------------------------------------------------------------------->
+                <div class="container mt[300px]  flex flex-col justify-between items-center">
+                    <div class="font-primary text-[#F8F4FF]">
+                        <h2 class="font-semibold text-5xl leading-[59px] my-7">
+                            Peşəkar komandamız ilə hər zaman <br />sizinlə əməkdaşlıq etməyə hazırıq.
+                        </h2>
+                    </div>
+                    <div class="flex flex-col font-primary">
+                        <a href="#" style="padding: 15px 30px 15px 30px"
+                            class="rounded-[14px] bg-white font-bold text-main hover:bg-mainPurple hover:text-lPurple transition-all duration-300 ease-in-out delay-75">Müraciət
+                            edin</a>
+                    </div>
+                </div>
+            </section>
+            <!-------------------------------------------------- Muraciet Section End ---------------------------------------------------------------------->
+
+            <section class="bg-main h-[512px] pt-[146px]">
+                <!-------------------------------------------------- Son yenilikler Section Start ---------------------------------------------------------------------->
+                <div class="container mt-[300px] flex flex-col justify-center items-center gap-5">
+                    <div class="font-primary text-[#F8F4FF] flex justify-center">
+                        <h2 class="font-semibold text-5xl leading-[58px] my-7 text-center">
+                            Ən son yeniliklərdən xəbərdar <br />
+                            olmaq üçün abunə olun.
+                        </h2>
+                    </div>
+                    <div class="email-sec">
+                        <input class="rounded-3xl h-[78px] w-[701px] outline-none border-none pl-7" type="email"
+                            placeholder="E-mail ünvanınız" required />
+                    </div>
+
+                    <div class="flex flex-col font-primary">
+                        <a href="#" style="padding: 15px 30px 15px 30px"
+                            class="rounded-[14px] bg-mainPurple font-bold text-lPurple hover:bg-mainPurple hover:text-lPurple transition-all duration-300 ease-in-out delay-75">Abunə
+                            olmaq</a>
+                    </div>
+                </div>
+            </section>
+            <!-------------------------------------------------- Son yenilikler Section End ---------------------------------------------------------------------->
+        </main>
+        <!-------------------------------------------------- MAIN End ---------------------------------------------------------------------->
+
+        <footer>
+            <!-------------------------------------------------- FOOTER Start ---------------------------------------------------------------------->
+
+            <section class="bg-main h-[737px] pt-[146px]">
+                <div style="border-top: 1px solid #fff; border-bottom: 1px solid #fff">
+                    <div class="container flex justify-between items-center pt-[104px] pb-[122px] gap-3 text-lPurple">
+                        <div class="flex justify-center items-center gap-5">
+                            <div class="flex flex-col font-primary text-2xl font-primaryBold gap-8">
+                                <div>
+                                    <h5>Haqqımızda</h5>
+                                </div>
+
+                                <div class="flex flex-col font-medium text-2xl gap-3">
+                                    <ul>
+                                        <li>
+                                            <a class=" text-lPurple  hover:text-mainPurple transition-all duration-300 ease-in-out delay-75"
+                                                href="./haqqimizda.html" class=" ">Haqqımızda</a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                                class="text-lPurple  hover:text-mainPurple transition-all duration-300 ease-in-out delay-75 ">Dəyərlərimiz</a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                                class="text-lPurple  hover:text-mainPurple transition-all duration-300 ease-in-out delay-75 ">Vizyon
+                                                və missiya</a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                                class="text-lPurple  hover:text-mainPurple transition-all duration-300 ease-in-out delay-75 ">Tədarükçülərimiz</a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                                class="text-lPurple  hover:text-mainPurple transition-all duration-300 ease-in-out delay-75 ">Müştərilərimiz</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="flex justify-center items-center gap-5">
+                            <div class="flex flex-col font-primary text-2xl font-primaryBold gap-8">
+                                <div class="flex flex-col font-medium text-2xl gap-3">
+                                    <ul>
+                                        <li>
+                                            <a href=""
+                                                class="text-lPurple  hover:text-mainPurple transition-all duration-300 ease-in-out delay-75 ">Satış
+                                                istiqamətlərimiz</a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                                class="text-lPurple  hover:text-mainPurple transition-all duration-300 ease-in-out delay-75 ">Bizimlə
+                                                əlaqə</a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                                class="text-lPurple  hover:text-mainPurple transition-all duration-300 ease-in-out delay-75 ">Kataloq</a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                                class="text-lPurple  hover:text-mainPurple transition-all duration-300 ease-in-out delay-75 ">Fəaliyyət
+                                                sahələri</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-center items-center gap-5">
+                            <div class="flex flex-col font-primary text-2xl font-primaryBold gap-8">
+                                <div>
+                                    <h5>Digər</h5>
+                                </div>
+
+                                <div class="flex flex-col font-medium text-2xl gap-3">
+                                    <ul>
+                                        <li>
+                                            <a href="" class=" ">Vakansiyalar</a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                                class="text-lPurple  hover:text-mainPurple transition-all duration-300 ease-in-out delay-75 ">Üstünlüklərimiz
+                                                və iş mühiti</a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                                class="text-lPurple  hover:text-mainPurple transition-all duration-300 ease-in-out delay-75 ">Press-reliz</a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                                class="text-lPurple  hover:text-mainPurple transition-all duration-300 ease-in-out delay-75 ">Foto
+                                                və videolar</a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                                class="text-lPurple  hover:text-mainPurple transition-all duration-300 ease-in-out delay-75 ">Xəbərlər,
+                                                yeniliklər</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-center items-center">
+                            <div class="flex flex-col font-primary text-2xl font-primaryBold gap-5">
+                                <div class="">
+                                    <a href=""><img class="w-[257px]" src="./assets/images/VUMES LOGO PURPLE PNG 2.png"
+                                            alt="headerLogo" /></a>
+                                </div>
+
+                                <div class="flex justify-around font-medium text-2xl">
+                                    <a class="ml-[10px] text-lPurple  hover:bg-mainPurple hover:rounded-md transition-all duration-300 ease-in-out delay-75"
+                                        href="#"><img src="./assets/images/linkedin.svg" alt="link" /></a>
+                                    <a class=" text-lPurple  hover:bg-mainPurple hover:rounded-md transition-all duration-300 ease-in-out delay-75"
+                                        href="#"><img src="./assets/images/facebook.svg" alt="link" /></a>
+                                    <a class=" text-lPurple  hover:bg-mainPurple hover:rounded-md transition-all duration-300 ease-in-out delay-75"
+                                        href="#"><img src="./assets/images/instagram.svg" alt="link" /></a>
+                                    <a class="mr-[-14px]  text-lPurple  hover:bg-mainPurple hover:rounded-md transition-all duration-300 ease-in-out delay-75"
+                                        href="#"><img src="./assets/images/twitter.svg" alt="link" /></a>
+                                </div>
+
+                                <div class="flex justify-center items-center font-primary mt-6">
+                                    <a href="#" style="padding: 15px 30px 15px 30px; border-radius: 32px"
+                                        class="bg-white text-main font-bold hover:bg-mainPurple hover:text-lPurple transition-all duration-300 ease-in-out delay-75">Bizimlə
+                                        əlaqə</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container flex justify-between font-primary text-2xl font-medium text-lPurple pt-[61px]">
+                    <div>
+                        <a href="">© 2023 "Vumes" MMC, Bütün hüquqlar qorunur.</a>
+                    </div>
+                    <div class="flex gap-9">
+                        <a href="">İstifadə qaydaları</a>
+                        <a href="">Müştəri hüquqları</a>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+
+    <!-------------------------------------------------- FOOTER End---------------------------------------------------------------------->
+
+
+    <!-- main JS -->
+    <script src="./assets/scripts/main.js"></script>
+
+    <!-- swipper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- jquery JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- fonawsome kit -->
+    <script src="https://kit.fontawesome.com/d5c98c56f9.js" crossorigin="anonymous"></script>
+
+    <script>
+        const swipper1 = new Swiper(".swipper1", {
+            // Optional parameters
+            effect: "fade",
+            loop: true,
+            speed: 500,
+            centeredSlides: true,
+            autoplay: {
+                delay: 1000,
+            },
+            pagination: {
+                el: ".animeslide-pagination",
+                type: "custom",
+                renderCustom: function (swiper, current, total) {
+                    let indT = total >= 5 ? total : `${total}`;
+                    let indC = current >= 5 ? current : `${current}`;
+                    return `<b>${indC}</b><span>/</span>${indT}`;
+                },
+            },
+            navigation: {
+                nextEl: ".animeslide-button-next",
+                prevEl: ".animeslide-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination1",
+                clickable: true,
+            },
+            keyboard: {
+                enabled: true,
+                onlyInViewport: false,
+            },
+            runCallbacksOnInit: true,
+        });
+
+
+
+        const swiper = new Swiper('.slide-content', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            centerInsufficientSlides: false,
+            // loopFillGroupWithBlank: true,
+            direction: 'horizontal',
+            // loop: true,
+
+            autoplay: {
+                delay: 5000,
+            },
+
+            pagination: {
+                el: '.swiper-pagination2',
+                clickable: true,
+
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            }
+        });
+
+
+
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            //toggle the component with class accordion_body
+            $(".accordion_head").click(function () {
+                if ($('.accordion_body').is(':visible')) {
+                    $(".accordion_body").slideUp(300);
+                    $(".plusminus").text('+');
+                }
+                if ($(this).next(".accordion_body").is(':visible')) {
+                    $(this).next(".accordion_body").slideUp(300);
+                    $(this).children(".plusminus").text('+');
+                } else {
+                    $(this).next(".accordion_body").slideDown(300);
+                    $(this).children(".plusminus").text('-');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
